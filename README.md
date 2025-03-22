@@ -1,17 +1,21 @@
 # OCRApiBridge
 本项目将Azure OCR接口转换为OpenAI视觉模型接口格式
 
-Astro框架，可以使用netlify等serverless服务部署
-
 甚至还带了一个前端给你测试
+
+Astro框架，可以使用netlify等serverless服务部署
 
 用途：
   - 很方便地在Open WebUI上使用
   - 想不到了
 
+效果：
+![image](https://github.com/user-attachments/assets/3150b867-cec8-4387-bcc5-2a6865bbca35)
+
 ## 如何使用
 1. 在Azure上创建一个视觉服务，获取key和endpoint
 2. fork本项目，在netlify上部署
+  如果你在其它serverless平台部署，则需要更换SSR适配器。参考官方文档：https://docs.astro.build/zh-cn/guides/on-demand-rendering/
 3. 填入环境变量
    ```
     AZURE_OCR_KEY=your_key
