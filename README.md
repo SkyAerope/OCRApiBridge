@@ -9,12 +9,17 @@ Astro框架，可以使用netlify等serverless服务部署
   - 很方便地在Open WebUI上使用
   - 想不到了
 
-效果：
+## 效果：
+用于测试的前端
+![image](https://github.com/user-attachments/assets/4b1cd21a-a350-436a-ae4f-a1f82fa26235)
+
+Open WebUI
 ![image](https://github.com/user-attachments/assets/3150b867-cec8-4387-bcc5-2a6865bbca35)
 
 ## 如何使用
 1. 在Azure上创建一个视觉服务，获取key和endpoint
 2. fork本项目，在netlify上部署
+
   如果你在其它serverless平台部署，则需要更换SSR适配器。参考官方文档：https://docs.astro.build/zh-cn/guides/on-demand-rendering/
 3. 填入环境变量
    ```
