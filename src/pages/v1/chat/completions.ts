@@ -1,4 +1,3 @@
-// src/pages/api/v1/chat/completions.ts
 import { Buffer } from 'buffer';
 import type { APIRoute } from 'astro';
 

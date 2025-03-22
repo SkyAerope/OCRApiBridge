@@ -1,4 +1,3 @@
-// src/pages/api/v1/models.ts
 import type { APIRoute } from 'astro';
 
 interface Model {
@@ -13,11 +12,7 @@ interface ModelsResponse {
   data: Model[];
 }
 
-export const get: APIRoute = async () => {
-  return handleModelsRequest();
-};
-
-export const post: APIRoute = async () => {
+export const GET: APIRoute = async () => {
   return handleModelsRequest();
 };
 
