@@ -42,7 +42,7 @@ export const POST: APIRoute = async ({ request }) => {
     // 提取图片数据
     const imageMessage = requestBody.messages
       .flatMap(m => m.content)
-      .find(c => c.type === 'image_url');
+      .findLast(c => c.type === 'image_url');
 
     if (!imageMessage?.image_url?.url) {
       return new Response(JSON.stringify({
@@ -119,5 +119,5 @@ function extractTextFromAzureResponse(response: any): string {
 // 简化的token计算
 function calculateTokenCount(input: any): number {
   const text = typeof input === 'string' ? input : JSON.stringify(input);
-  return Math.ceil(text.length / 4); // 近似计算
+  return Math.ceil(text.length / 2); // 近似计算
 }
